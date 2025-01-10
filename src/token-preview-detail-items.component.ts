@@ -1,4 +1,4 @@
-import { TokenPreviewDetailItem } from "./tolen-preview-detail-item.component";
+import { TokenPreviewDetailItem } from "./token-preview-detail-item.component";
 
 export function TokenPreviewDetailItems(
   title: string,
@@ -13,7 +13,7 @@ export function TokenPreviewDetailItems(
           <div class="token-detail__items">
             ${items.map(({ title, value }) => {
               return TokenPreviewDetailItem(title, value);
-            })}
+            }).join('')}
           </div>
         </article>`;
 }
